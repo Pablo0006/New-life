@@ -1,0 +1,23 @@
+p, .wazny {
+    font-size: 40px;
+    font-weight: bold ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.wazny {
+    color: red;
+}
+
+#superwazny, #lol {
+    color: blue;
+}
+
+p.wazny span {
+    color: rgb(238, 48, 225);
+}
+
+.To {
+    color: blueviolet;
+}
+

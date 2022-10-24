@@ -10,8 +10,9 @@ body {
 }
 #wrapper {
     max-width: 1000px;
-    margin: 0 auto 0 auto;
-    background-color: rgb(218, 165, 32);
+   
+    margin: 0 auto 1 auto;
+    background-color:#304050
     
 
 }
@@ -21,7 +22,7 @@ header img {
     
 }
 nav {
-    background-color: rgb(24, 110, 201);
+    background-color: #3a414f9;
 }
 nav a {}
 
@@ -31,27 +32,32 @@ a.menu {display:inline-block;
         color: aliceblue;
         text-decoration: none;
         text-align: center;
+       
          
        
         
 }
 
      img:hover {
-        border-left: 10px solid red;
+        border-left: 10px solid #7b8b8d;
      }
 a.menu:hover {
-    background-color:rgb(218, 165, 32);
+    background-color:#747078;
 
 }
 .active {
-    background-color: crimson;
+    background-color: #304050;
 
 }
 article {
-    margin-top:30px ;
-    margin-bottom: 20px;
     
+    margin-bottom: 20px;
+     color: aliceblue;    
 
 
 }
+
+
+
+
 
