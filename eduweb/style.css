@@ -1,23 +1,26 @@
-p, .wazny {
-    font-size: 40px;
-    font-weight: bold ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+html  {
+    font-size: 62.5%;
+}
+
+
+body {
+    background-color: aliceblue;
+    color: rgb(225, 159, 159);
+    size: 50px;
+    font-size: 20px;
+    font-style: ;
+    font-weight: ;
+    line-height: ;
+
+}
+
+h1 {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
     font-style: italic;
+    line-height: ;
 }
-
-.wazny {
-    color: red;
+p {
+    line-height: 1.5;
 }
-
-#superwazny, #lol {
-    color: blue;
-}
-
-p.wazny span {
-    color: rgb(238, 48, 225);
-}
-
-.To {
-    color: blueviolet;
-}
-
