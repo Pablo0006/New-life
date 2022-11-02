@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Formularze</h4>
+<!-- action jest to skrypt na serwerze który odbierze nasz formularz-->
+<!-- Następnie metoda wysyłki get lub post  WAZEEE jezeli w formularzu znajduje
+sie pole file to w enctype podajemy MULTIPART FORM DATA !-->
+    <form action="login.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Logowanie</legend>
+     <!-- teraz dodajemy poszczególne pola formularza, poniżej czyli nazwa użytkownika-->
+            <p>
+                <label>Wpisz użytkownika:
+                    <input type="text" name="user name" id="username" required placeholder="  sdsd sdadzytkownika">
+        
+                </label>
+                <label>Email:
+                    <input type="email" name="email" id="email" required placeholder="email">
+                </label>
+            </p>
+            <p>
+                <label for="password">Wpisz hasło</label>
+                <!--required wymaga zeby wypełnić pole od taka opcja-->
+                <input type="password" name="password" id="password" required>
+            </p>
+            <p>
+                <button type="submit">zaloguj</button>
+                <button type="reset">Resetuj</button>
+            </p>
+         </fieldset>
+     </form>
+
+     <form action="register.asp" method="post">
+        <fieldset>
+            <legend>Rejstracja</legend>
+            <input type="hidden" value="derer" name="hidden-value">
+     
+            <p>
+                <label>Wpisz użytkownika:
+                <input minlength="5" maxlength="30" type="text" name="user name" id="username" required placeholder="  sdsd sdadzytkownika">
+        
+                </label>
+            </p>
+            <p>
+                <label for="password">email</label> 
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="password2">Wpisz hasło ponownie </label> 
+                <input type="password2" name="password2" id="password" required>
+            </p>
+            <p>
+                <label for="age">wiek </label> 
+                <input type="number" name="age" id="age" min="14" max="110" required>
+            </p>
+            Ulubiony kolor:
+            <label for="description">Opis użytkownika</label><br>
+            <p><textarea name="description " id="description" cols="30" rows="10"></textarea></p>
+            <p>
+                <label for="avatarimg">Wybierz avatar:</label>
+               <input type="File" name="avatar" id="avatarimg" accept="image/png, image/jpg"> 
+            </p>
+
+            <p>
+                Ulubiony kolor:
+                <input type="radio" name="color" value="red" id="red">
+                <label for="red">czerwony</label>
+                <input type="radio" name="color" value="green" id="green">
+                <label for="red">zielony</label>
+                <input type="radio" name="color" value="blue" id="blue">
+                <label for="red">niebieski</label>
+            </p>
+            <p>
+                Ulubiona marka:
+                <input type="Checkbox" name="brand" value="doge" id="doge">
+                <label for="doge">Doge</label>
+                <input type="checkbox" name="brand" value="pontiac" id="pontiac">
+                <label for="pontiac">Pontiac</label>
+                <input type="checkbox" name="brandr" value="blue" id="blue">
+                <label for="gmc">GMC</label>
+            </p>
+            <p>
+                <label for="dodge">Data zakupu auta</label>
+                <input id="datetime"name="datetime" type="datetime-local">
+                
+            </p>
+            <p>
+                <label for="dodge">Telefon</label>
+                <input id="Tel"name="telephone" type="tel">
+                
+            </p>
+                <label for="dodge">Telefon</label>
+                <input id="Tel"name="telephone" type="tel">
+            <p>
+                <label for="distance">Przebieg w tys km</label>
+                <input type="range"name="distance" id="carcolor" min="1" max="100" step="1">
+            </p>
+            <p>
+                <label for="url">Strona aukcji/komisu</label>
+                <input type="url"name="urladr" id="url" >
+            </p>
+            <label for="url">Templatka forum</label>
+            <select name="theme" id="theme">
+                <option value="white">biały</option>
+                <option value="white">ciemny</option>
+            </select>
+            <p>
+
+                <button type="submit">zaloguj</button>
+                <button type="reset">Resetuj</button>
+            </p>
+         </fieldset> 
+    </form>
+</body>    
+</html>
