@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Formularze</h4>
+
+    <form action="login.php" method="post" enctype="multipart/form-data">
+        <!--Label to etykieta a IMPUT to wyjście/wejście-->
+        <fieldset>
+            <legend>Logowanie</legend>
+            <input type="hidden" value="sdasdsadsadadasd" name="hidden_valiue">
+            <p>
+                <label>Wpisz użytkownika:
+                    <input minlength="5" maxlength="30" type="text" name="user_name"  id="username" required placeholder="">
+                </label>
+            </p>
+             <p>
+                <label for="password">Wpisz Hasło</label>
+                <input type="password" name="password" id="password" required>
+            </p>
+            <p>
+                <button type="submit">Zaloguj</button>
+                <button type="reset">Reset</button>
+
+            </p>
+        </fieldset>
+    </form>
+        <fieldset>
+            <legend>Rejstracja</legend>
+            <p>
+                <label>Wpisz użytkownika:
+                    <input type="text" name="user_name"  id="username" required placeholder="email">
+                </label>
+            </p>
+            <p>
+                <label for="password">Email</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="password">Wpisz Hasło</label>
+                <input type="password" name="password" id="password" required>
+            </p>
+            <p>
+                <label for="password">Wpisz Hasło ponownie</label>
+                <input type="password2" name="password2" id="password" required>
+            </p>
+            <p>
+                <label for="age">Wiek</label>
+                <input type="number" name="age" id="age" min="14" max="120" required>
+            </p>
+                <label for="description">Opis użytkownika</label><br>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            <p>
+                <label for="avataring">Wybierz avatar</label>
+                 <input type="file" name="avatar"id="avataring" accept="image/png ,image/jpg">   
+            </p>
+                ulubiony kolor:
+                <input type="radio" name="color" value="red" id=""red>
+                <label for="red">czerwony</label>
+                <input type="radio" name="color" value="pink" id="pink"red>
+                <label for="pink">Różowy</label>
+                <input type="radio" name="color" value="blue" id="blue"red>
+                <label for="red">Niebieski</label>
+            </p>
+            <p>
+                ulubiony kolor:
+                <input type="checkbox" name="brand" value="dodge" id=""red>
+                <label for="dodge">Dodge</label>
+                <input type="checkbox" name="brand" value="pontiac" id="pontiac"red>
+                <label for="pink">Pontiak</label>
+                <input type="checkbox" name="brand" value="gmc" id="gmc"red>
+                <label for="red">OMG</label>
+             </p>
+             <p>
+                <label for="datetime">Data zakupu auta</label>
+                <input id="datetime" name="datetime" type="datatime-local">
+             </p>
+                <label for="carcolor">Kolor auta</label>
+                <input type="Color" name="carcolor"id="carcolor">
+            </p>
+                <label for="tel">Telefon</label>
+                 <input type="Tel" name="telephone"id="tel">
+             </p> 
+            </p>
+                <label for="Distance">Przebieg w tys km</label>
+                <input type="range" name="telephone"id="distance" min="1" max="100" step="1">
+             </p>
+            </p>
+                <label for="Distance">Strona aukcji</label>
+                 <input type="url" name="urladdr"id="url">
+         </p>
+         <p>    <label for="theme">Templatka</label>
+                <select name="theme" id="theme">
+                    <option value="white">biały</option>
+                    <option value="dark">iemny</option>
+                </select>
+         </p>
+             <p>
+                <button type="submit">Zaloguj</button>
+                <button type="reset">Reset</button>
+            </p>
+    </fieldset>
+
+    <form action="register.asp" method="post"></form>
+</body>
+</html>
