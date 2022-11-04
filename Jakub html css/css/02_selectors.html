@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: black;
+            padding-bottom: 10px;
+        }
+        #logo{
+            width: 50px;
+            height: 50px;
+            margin-left: 5px;
+
+        }
+        li > a{
+            color: brown;
+            font-family: verdana;
+        }
+        
+        ul{
+            text-align: center;
+        }
+        ul li{
+            /* zamiana z blokowego na inline do tego służy display*/
+            display: inline;
+            margin-left: 5;
+        }
+        #header-gallery{
+            width: 100%;
+            height: 200px;
+            background: url(https://images.unsplash.com/photo-1546948630-1149ea60dc86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) no-repeat center;
+            background-size:cover ;
+        }
+        main {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* potomkowie elementu main  a gdyby było wskazanie > zanczyło by że chodzi o
+        dziecie */
+        main h1, main p{
+        font-family: Verdana,;
+        text-align: justify;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="logo" src= alt="">
+            <ul>
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Regulamin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header id="header-gallery"></header>
+    <main>
+        <article>
+            <h1>Moje wakacje</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <ol>
+                <li class="item">wyspa</li>
+                <li class="item">Góry</li>
+                <li class="item">Las</li>
+                <li class="item">Jeziora</li>
+            </ol>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem esse exercitationem mollitia, quo, repellat totam natus dolor provident illum recusandae ipsa repellendus quidem reprehenderit consequuntur numquam hic culpa, ullam officiis nesciunt vero placeat iure similique deleniti? Quod nesciunt nulla deserunt voluptatum maiores numquam quos quam. Esse modi corrupti, odit laborum sit ipsa consequatur, quisquam praesentium doloribus optio vero sequi nam maxime, perferendis dolor ad hic! Quibusdam explicabo in vero illum facere necessitatibus et ab sapiente sit, ullam odit impedit provident id possimus perspiciatis nostrum perferendis! Nobis obcaecati, veniam voluptate molestiae dicta quo voluptatem, animi non aliquid laborum sit reiciendis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem esse exercitationem mollitia, quo, repellat totam natus dolor provident illum recusandae ipsa repellendus quidem reprehenderit consequuntur numquam hic culpa, ullam officiis nesciunt vero placeat iure similique deleniti? Quod nesciunt nulla deserunt voluptatum maiores numquam quos quam. Esse modi corrupti, odit laborum sit ipsa consequatur, quisquam praesentium doloribus optio vero sequi nam maxime, perferendis dolor ad hic! Quibusdam explicabo in vero illum facere necessitatibus et ab sapiente sit, ullam odit impedit provident id possimus perspiciatis nostrum perferendis! Nobis obcaecati, veniam voluptate molestiae dicta quo voluptatem, animi non aliquid laborum sit reiciendis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem esse exercitationem mollitia, quo, repellat totam natus dolor provident illum recusandae ipsa repellendus quidem reprehenderit consequuntur numquam hic culpa, ullam officiis nesciunt vero placeat iure similique deleniti? Quod nesciunt nulla deserunt voluptatum maiores numquam quos quam. Esse modi corrupti, odit laborum sit ipsa consequatur, quisquam praesentium doloribus optio vero sequi nam maxime, perferendis dolor ad hic! Quibusdam explicabo in vero illum facere necessitatibus et ab sapiente sit, ullam odit impedit provident id possimus perspiciatis nostrum perferendis! Nobis obcaecati, veniam voluptate molestiae dicta quo voluptatem, animi non aliquid laborum sit reiciendis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem esse exercitationem mollitia, quo, repellat totam natus dolor provident illum recusandae ipsa repellendus quidem reprehenderit consequuntur numquam hic culpa, ullam officiis nesciunt vero placeat iure similique deleniti? Quod nesciunt nulla deserunt voluptatum maiores numquam quos quam. Esse modi corrupti, odit laborum sit ipsa consequatur, quisquam praesentium doloribus optio vero sequi nam maxime, perferendis dolor ad hic! Quibusdam explicabo in vero illum facere necessitatibus et ab sapiente sit, ullam odit impedit provident id possimus perspiciatis nostrum perferendis! Nobis obcaecati, veniam voluptate molestiae dicta quo voluptatem, animi non aliquid laborum sit reiciendis!</p>
+        </article>
+    </main>
+</body>
+</html>
