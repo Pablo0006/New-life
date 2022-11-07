@@ -40,13 +40,31 @@
             margin-left: auto;
             margin-right: auto;
         }
-        /* potomkowie elementu main  a gdyby było wskazanie > zanczyło by że chodzi o
-        dziecie */
-        main h1, main p{
-        font-family: Verdana,;
-        text-align: justify;
+        p + ol{
+            background-color: azure;
+            padding: 20px;
 
         }
+
+        .item {
+            font-weight: bold;
+
+        }
+        ol ~ P {
+            font-style: italic;
+        }
+
+        main h1, main p{
+            font-family: Verdana;
+            text-align: justify;
+
+        }
+
+        /* potomkowie elementu main  a gdyby było wskazanie > zanczyło by że chodzi o
+        dziecie */
+        
+
+        
     </style>
 </head>
 <body>
