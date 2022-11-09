@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*jeżeli atrybut href ma wartość home html to w taki mwypadku ...*/
+        [href="home.html"] {
+            background: red;
+
+        }
+
+      a[data-link] {
+        background: green;
+
+      }
+    
+
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a class="red-link" href="home.html">Home</a>
+        </li>
+        <li>
+            <a href="about.html" data-link="bold link" class="orange">About</a>
+        </li>
+        <li>
+            <a class="small-text bold italic" href="tos.html">tos</a>
+        </li> 
+    </ul>
+</body>
+</html>
+
