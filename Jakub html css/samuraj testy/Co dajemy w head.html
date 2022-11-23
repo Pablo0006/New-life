@@ -62,6 +62,83 @@
 
     </header>
 
-    
+    <h1>KOMBINATORY</h1>
+<!-- Weź jakiekolwiek p które są ptomami h1 -->
+    <p>spacja potomek  h1 p</p>
+    <!--Weź ul które jest bratem p ale bezpośrednio przed ul  -->
+    <p>+ pierwszy młodszy brat p+ul</p>
+    <!-- Weź div który jest młodszym bratem diva -->
+    <p>` każdy młodszy brat  div ` div </p>
+    <!-- Weź li które jest dzieckiem li -->
+    <p>> dziecko         li>li</p>
+    <!-- wybież każdy element na stornie - wybiera wszystko -->
+    <p> * Selektor uniwersalny</p>
+
+    <h1>BLOK DEKLARACJI CZYLI KLAMRA</h1>
+    p {
+
+    }
+    <h2>Deklaracja czyli to co piszemy w bloku</h2>
+    właściwość czyli font : i wartość czli arial sans serif i ;
+
+    <h1>SELEKTORY KLASY CZYLI . W CSS</h1>
+    <!-- Ludzie posługują się nimi bardziej niż wyborem potomków itd. -->
+    .one - weźmie oba 
+    p.one - weźmie one z p czyli to pierwsze, bo jest bardziej precyzyjny.
+    <p class="one">text</p>
+    <div class="one">text</div>
+    <p>w selektorze class możesz użyć dwoch słow albo 10 ile chcesz nie musi to być jedno.
+        p.red.big - bez spacji to ważne czytamy razem bez spacji weź jednocześnie red i big razem
+    </p>
+
+    <h1>SELEKTORY ID</h1>
+    <!-- Podobno mniej popularne niż klasy # -->
+    <p>Identyfikator O DANEJ nazwie powinniśmy użyć na stronie tylko raz
+        nie powtarzajmy dwa razy tej samej nazwt one one jako ID.
+    Natomiest w klasach możemy używać wielokrotnie tych samych nazw</p>
+
+    <h1>GRUPOWANIE SELEKTORÓW</h1>
+
+<p>Po przecinku można określić więcej niż jeden selektor
+    jeżeli p i div mają być takie same to dajemy tylko przecinek
+    p,div {} ale również weź .red, #one, h3 { } tak też można.
+</p>
+
+
+<h1>RESET STYLÓW</h1>
+<p>* {
+    margin 0
+    padding 0
+}
+html {
+    font-size: 10 px;
+}
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>  
