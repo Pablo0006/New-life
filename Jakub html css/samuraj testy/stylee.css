@@ -6,18 +6,52 @@ url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Ral
     margin: 0;
     padding: 0;
 }
-
-div.wrapper {
-
+header {
+    height:  300px;
+    background-color:  cadetblue;
 }
-nav {
 
-}nav a {
-    font-size: 25px;
+nav {
+    margin:20px 0 ;
+    text-align: right;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 22px;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: Oswald;
-    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+    padding: 10px 20px;
+    margin: 0 15px;
+    transition: 1s;
     
-
 }
+a.bt4 {
+    border: 2px solid brown;
+    margin-left: 100px;
+    margin-right:50px ;
+    letter-spacing: 2px;
+}
+nav a:hover {
+    border-bottom: 2px solid brown;
+}
+
+nav a.bt4:hover {
+    background-color: brown;
+    color: white;
+    
+}
+
+main {
+    min-height: 50vh;
+    background-color: burlywood;
+}
+footer {
+    min-height: 100px;
+    background-color: darkcyan;
+}
+
+
+
