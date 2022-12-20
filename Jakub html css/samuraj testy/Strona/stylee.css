@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    /* ma 90 % okna przeglądarki ale nigdy nie będzie mieć więcej niż 1024 */
+    width: 90%;
+    max-width: 1024px;
+    background-color: black;
+    margin: 30px  auto;
+    padding: 0 20px;
+    border-radius: 20px;
+
+}
+nav ul {
+    list-style: none;
+    font-size: 0;
+     
+}
+nav ul li {
+    display: inline-block;
+    width: 20%;
+}
+nav ul li a {
+    /* Pamiętaj że inline block są li dla tego zmieniamy tutaj jeszcze wszystkie a na display block
+    zeby zadziałał paddkig góra dół 20px w a w naszym menu. */
+    display: block;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px;
+    text-align: center;
+}
+section {
+    height: 300px;
+    background-color: darkgoldenrod;
+}
