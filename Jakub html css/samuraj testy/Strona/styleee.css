@@ -65,8 +65,42 @@ header h1 {
 }
 main {
     max-width: 1440px;
-    margin:  5vh auto; 
+    margin:  5vh auto;
+    font-size: 0;
+    
+}
+main p.description {
+    font-size: 22px;
+    text-align: center;
+    margin: 0 30px 50px;
+    line-height: 180%;
+    
+}
+main section {
+    background-color: #000;
+    padding: 30px;
+}
+main div.features {
+        display: inline-block;
+        width: 33.33%;
+        /* background-color: rgb(209, 138, 138); */
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+}
 
+
+main div.image {
+    height: 200px;
+    background-color: #81afdc;
+    margin: 20px 30px;
+}
+main h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: aliceblue;
+}
+main h2:hover {
+    color:rgb(83, 161, 225);
 }
 footer {
     background-color: #000;
