@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Raleway:wght@500&family=Roboto:wght@100;300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #333;
+    padding-left: 20px;
+    border-bottom: 4px solid blue;
+    
+
+}
+nav a {
+    display: inline-block;
+    color: aliceblue;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+
+}
+nav a:hover {
+    color: orange;
+}
+header {
+    background-image: url(https://images5.alphacoders.com/337/thumb-1920-337020.jpg); */
+    background-size: cover;
+    height: 40vh;
+    margin:0 auto;
+    background-position: center;
+}
