@@ -1,0 +1,95 @@
+/* Dla prostych stron reset jest ok */
+* {
+    margin: 0;
+    padding: 0;
+    /* border:30px solid white; */
+}
+/* Odrazu można dopisać dziedziczone właściwości
+Oczywiście można importować */
+html {
+    font-family: verdana;
+}
+/* 1 Stylujemy nasze divy w header przez dziedziczenie */
+/* Poniżej mamy clearfix after żeby skończyć float bo elelenty prubują się wpychać w lewo a tam leży coś
+możemy sobie to napisać skopiopwać i używać dowolnie w innych stronach itd.
+Np. w nav czy stopce - w każdej sekcji/struktórze 
+DZIECI SĄ FLOTAMI TO RODZICOWI DAJEMY TĘ KLASĘ*/
+.clearfix::after {
+    /* Ustawiamy 3 rzeczy kontent żeby w ogole element powstał :)
+    2 display block
+    clear: both */
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header div {
+        /* box-sizing: border-box;
+        Kiedy chcmy użyć borderu i paddingu(dodają warstwy) to ustawiania kloców i żeby wliczał je do wielkości, bez tego rozwalają system wiadomo
+        margin nie jest widoczny to nie rozwala i bodrder musi mieć ten sam kolor co tło aa! i dajemy go do html zeby
+        wszystkie lelenty tak się zachowywały tzn do resetów:) */
+
+        /* border:30px solid white; */
+        width: 19%;
+        /* Do tego niżej, możemy sobie ustawić wyższe klocki zwiększając margin np o 3 % ale wtedy trzeba zmniejszyć
+        width do 19 % bo margin lewo prwao 3% to 6% plus 19 % to 25 :) a mamy 4 klocki, no żeby się zgadzałona 
+        stronie. */
+        margin: 3%;
+        height: 200px;
+        background-color: royalblue;
+        /* pojawiły się pod sobą bo każdy block tak robi, zaczyna się od nowej lini - ustawiamy floatem lub disaplay
+        inline block z przerwami dla tego na rodzica header daje się font size 0 zeby znikły przerwy. 
+        Jest jesze Grid i Flex i to jest przyszłość */
+        float: left;
+}
+/* Jak odwołać się do poszczególnych elelentów div na górze ? No !
+nth:nth-child() */
+header div:nth-child(1) {
+    background-color: rgb(166, 13, 13);
+}
+header div:nth-child(2) {
+    background-color: rgb(172, 24, 24);
+}
+header div:nth-child(3) {
+    background-color: brown;
+}
+header div:nth-child(4) {
+    background-color: rgb(165, 62, 62);
+}
+/* Dodajmy hovera i tu uwaga, możeby sobie połączyć go z nth:) */
+header div:nth-child(1):hover {
+    background-color: rgb(49, 177, 236);
+}
+header div:nth-child(2):hover {
+    background-color: rgb(65, 179, 232);
+}
+header div:nth-child(3):hover {
+    background-color: rgb(98, 193, 236);
+}
+header div:nth-child(4):hover {
+    background-color: rgb(142, 206, 236);
+}
+
+nav {
+    /* Czyli stworzyliśmy BG color sekcji nawigajci ale że dostało wysokość 50 px to zrobił się czarny pasek
+     Ale ! ..>*/
+    background-color: black;
+    /* height: 50px; Wywalamy bo jest nam nie potrzebny musimy dać coś z czym menu będzie rosło*/
+}
+/* Pozbądzmy się kropel z listy odwołując się do UL lub LI */
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    /* ustawiliśmy do lweje listę ale zniknął czarny pasek  ? bo zniknęła wysokość rodzica, nav nie liczy ele któe
+    są flot - można użyć overflo hidden w nav ale chcemy użyć clearfix
+    Napislaiśmy ją na samym początki a teraz użyjemy jej w sekcji nav doppisując class w html w nav:) Ale tak na prwdę
+    pownien być w ul bo jest rodzicem */
+    float: left;
+}
+
+/* Włączmy sobie kolor żeby widzieć gdzie są jak to wygląda */
+nav ul li a {
+    font-size: 12px;
+    color: rgb(159, 71, 71);
+}
