@@ -73,8 +73,10 @@ header div:nth-child(4):hover {
 nav {
     /* Czyli stworzyliśmy BG color sekcji nawigajci ale że dostało wysokość 50 px to zrobił się czarny pasek
      Ale ! ..>*/
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     /* height: 50px; Wywalamy bo jest nam nie potrzebny musimy dać coś z czym menu będzie rosło*/
+    padding: 10px 0 10px 50px;
+    margin: 20px 0;
 }
 /* Pozbądzmy się kropel z listy odwołując się do UL lub LI */
 nav ul {
@@ -86,10 +88,77 @@ nav ul li {
     Napislaiśmy ją na samym początki a teraz użyjemy jej w sekcji nav doppisując class w html w nav:) Ale tak na prwdę
     pownien być w ul bo jest rodzicem */
     float: left;
+    width: 25%;
+    /* Bardziej logicznym jest umieszczenie go w li niż w a */
+    margin: 0 10px;
+    /* width:30%; */
+
 }
+
 
 /* Włączmy sobie kolor żeby widzieć gdzie są jak to wygląda */
 nav ul li a {
-    font-size: 12px;
+    /* koniecznie ustawić display block żeby a było w całości klikalne żeby miało 100% li
+    Ustawiaj navigacje w a z display bock, prawie zawsze mamy tutaj pełną kontrolę */
+    display: block;
+    padding: 10px 30px;
+    border: solid white;
+    /* padding: 30px; */
+    font-size: 26px;
     color: rgb(159, 71, 71);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    /* background-color: white; */
+    color: rgb(231, 33, 125);
+    border-color: brown;
+
+}
+div.blog {
+    margin-top: 140px;
+}
+aside {
+    margin-top: 40px;
+}
+main {
+    /* background-color: rgb(135, 80, 80); */
+    /* height: 300px; */
+    float: left;
+    width: 65%;
+    padding: 30px 20px 0 20px;
+    
+}
+article img {
+    width: 200px;
+    float: left;
+    margin: 20px 20px 20px 0 ;
+    
+}
+article h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+article p {
+    /* JEŹELI MASZ JAKIŚ PROBLEM ODWOŁUJ SIĘ W CSS DO DANEJ SEKCJI DANEGO ELEMENTU - PO TO SĄ TE ELEMENTY ZEBY
+    NADAWAĆ RÓŻNYM RZECZPM ZNACZENIA WKŁADAĆ JE W P W KLASY ITP 
+    CHCIAŁEŚ WYRÓWAĆ TEXT ZE ZDJĘCIEM I NIE WIEDZIAŁEŚ JAK, A TRZEBA BYTŁO DODAĆ ARTICLE P ZEBY ODWOŁAĆ SIĘ DO
+    TEGO P CZYLI TEKSTU I WYRÓWNAĆ GO DODAJĄC MARGINES*/
+    margin-top: 20px;
+}
+aside {
+    height: 300px;
+    background-color: antiquewhite;
+    float: left;
+    width: 25%;
+}
+
+footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding:20px 0;
+    margin-top: 40px;
 }
