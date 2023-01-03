@@ -81,6 +81,10 @@ nav {
 /* Pozbądzmy się kropel z listy odwołując się do UL lub LI */
 nav ul {
     list-style: none;
+    /* max width dzięki temu menu nie rozszerzy się na dużym monitorze co źle wygląda */
+    max-width: 1024px;
+    /* Dodatkowo zostało wyśrodkowane */
+    margin: 0 auto;
 }
 nav ul li {
     /* ustawiliśmy do lweje listę ale zniknął czarny pasek  ? bo zniknęła wysokość rodzica, nav nie liczy ele któe
@@ -118,7 +122,9 @@ nav ul li a:hover {
 
 }
 div.blog {
+    margin: 0;
     margin-top: 140px;
+    max-width: 1280px;
 }
 aside {
     margin-top: 40px;
@@ -149,10 +155,36 @@ article p {
     margin-top: 20px;
 }
 aside {
-    height: 300px;
-    background-color: antiquewhite;
+    /* Aside height komenutejmy bo chcemy zeby sam rosną */
+    /* height: 300px; */
+    /* background-color: antiquewhite; */
     float: left;
     width: 25%;
+}
+section.contact {
+    background-color: #ddd;
+    padding: 15px;
+}
+section.news {
+    margin-top: 30px;
+    height: 300px;
+    background-color: #ddd;
+    padding: 15px;
+}
+
+section.contact p {
+        margin-bottom: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+}
+section.contact ul {
+    list-style: none;
+}
+section.contact ul li i {  
+    margin: 10px;
+    color: rgb(162, 56, 74);
+    font-size: 25px;
+    
 }
 
 footer {
